@@ -1,2 +1,10 @@
-let myHeading = document.querySelector('h1');
-monHeading.textContent = 'Bonjour, monde !';
+let myImage = document.querySelector('img');
+
+myImage.addEventListener('click', function() {
+    let mySrc = monImage.getAttribute('src');
+    if (mySrc === 'images/firefox-icon.png') {
+      myImage.setAttribute('src', 'images/firefox2.png');
+    } else {
+      myImage.setAttribute('src', 'images/firefox-icon.png');
+    }
+});
